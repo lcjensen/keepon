@@ -771,8 +771,15 @@ namespace SerialPortTerminal
         Send_Commands("55 00 03 06 A3 FF");
     }
 
- 
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            numericUpDown3.Value = 134;
+        }
 
-
-  }
+        private void button5_Click_2(object sender, EventArgs e)
+        {
+             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"c:\finOK.wav");
+             player.Play();
+        }
+    }
 }
